@@ -2,7 +2,7 @@
 import BaseHead from '../components/BaseHead.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
-import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
+import { SITE_TITLE, SITE_DESCRIPTION, WHATSAPP_NUMBER } from '../consts';
 ---
 
 <!doctype html>
@@ -13,49 +13,34 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 	<body>
 		<Header />
 		<main>
-			<h1>Claudio Martini</h1>
-			<p>
-				  limpieza y revisión de aire acondicionado
-			</p>
-			<p>
-mantenimiento esencial
-			</p>
-			<p>Limpieza profesional de aires acondicionados</p>
-			<ul>
-				<li>Ofrecemos limpieza profunda de unidades de aire acondicionado.
-Nuestro servicio elimina el polvo, el moho y las bacterias del interior de su sistema de aire acondicionado para mejorar la calidad del aire y su rendimiento. 
-- Limpieza interna profunda (no solo superficial)
-- Eliminación de moho y bacterias
-- Mejora del flujo de aire y la refrigeración
-- Seguro para hogares, niños y mascotas.
-- Experiencia profesional
-¿Por qué es importante la limpieza del aire acondicionado?
-Una limpieza profunda es una tarea de mantenimiento esencial para garantizar la eficiencia y la vida útil de su unidad. Un aire acondicionado bien mantenido puede marcar una gran diferencia:
+			<h1>{SITE_TITLE}</h1>
+			<p>{SITE_DESCRIPTION}</p>
 
-- Respirar aire más limpio y saludable
+			<section>
+				<h2>Servicios</h2>
+				<ul>
+					<li>Limpieza interna profunda de unidades de aire acondicionado</li>
+					<li>Eliminación de moho, bacterias y malos olores</li>
+					<li>Revisión preventiva de filtros y componentes</li>
+					<li>Mejora del flujo de aire y ahorro energético</li>
+				</ul>
+			</section>
 
-- Reducir los costos de electricidad
+			<section>
+				<h2>Por qué elegirnos</h2>
+				<p>Un aire acondicionado bien mantenido garantiza aire más limpio, menor consumo eléctrico y mayor vida útil del equipo.</p>
+			</section>
 
-- Prolongar la vida útil de su aire acondicionado
-
-- Prevenir averías y reparacionesli>
-				<li>Edit the site header items in <code>src/components/Header.astro</code></li>
-				<li>Add your name to the footer in <code>src/components/Footer.astro</code></li>
-				<li>Check out the included blog posts in <code>src/content/blog/</code></li>
-				<li>Customize the blog post page layout in <code>src/layouts/BlogPost.astro</code></li>
-			</ul>
-			<p>
-				Have fun! If you get stuck, remember to <a href="https://docs.astro.build/"
-					>read the docs
-				</a> or <a href="https://astro.build/chat">join us on Discord</a> to ask questions.
-			</p>
-			<p>
-				Looking for a blog template with a bit more personality? Check out <a
-					href="https://github.com/Charca/astro-blog-template"
-					>astro-blog-template
-				</a> by <a href="https://twitter.com/Charca">Maxi Ferreira</a>.
-			</p>
-		</main>
+			<section class="contact-section">
+				<h2>Contáctanos</h2>
+				<p>¿Listo para mejorar tu aire acondicionado? Hablemos por WhatsApp.</p>
+				<a href={`https://wa.me/${WHATSAPP_NUMBER.replace(/\D/g, '')}`} target="_blank" class="whatsapp-button">
+					<svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+						<path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.67-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.076 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421-7.403h-.004c-1.537 0-2.852-.504-3.846-1.497-1.003-1.002-1.556-2.335-1.556-3.862 0-1.528.553-2.86 1.556-3.864 1.003-1.002 2.318-1.556 3.859-1.556 1.54 0 2.856.554 3.859 1.556 1.003 1.003 1.556 2.335 1.556 3.864 0 1.527-.553 2.86-1.556 3.862-.992.993-2.308 1.497-3.868 1.497M20.519 3.481C19.382 2.343 17.844 1.7 16.185 1.7c-1.658 0-3.196.643-4.333 1.781-1.137 1.137-1.773 2.675-1.773 4.333 0 1.658.636 3.196 1.773 4.333 1.137 1.137 2.675 1.773 4.333 1.773 1.658 0 3.196-.636 4.333-1.773 1.137-1.137 1.773-2.675 1.773-4.333 0-1.658-.636-3.196-1.773-4.333M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0"/>
+					</svg>
+					Contactar por WhatsApp
+				</a>
+			</section>
 		<Footer />
 	</body>
 </html>

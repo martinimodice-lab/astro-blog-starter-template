@@ -1,6 +1,5 @@
 ---
 import HeaderLink from './HeaderLink.astro';
-import { GOOGLE_CALENDAR_URL } from '../consts';
 ---
 
 <header>
@@ -8,7 +7,7 @@ import { GOOGLE_CALENDAR_URL } from '../consts';
 		<h2><a href="/" class="logo"><img src="/Logo.png" alt="CLAUDIO MARTINI - Limpieza de aire acondicionado" /></a></h2>
 		<div class="internal-links">
 			<HeaderLink href="/">INICIO</HeaderLink>
-			<HeaderLink href={GOOGLE_CALENDAR_URL} target="_blank">AGENDA</HeaderLink>
+			<HeaderLink href="/agenda">AGENDA</HeaderLink>
 			<HeaderLink href="/about">CONTACTO</HeaderLink>
 		</div>
 	</nav>

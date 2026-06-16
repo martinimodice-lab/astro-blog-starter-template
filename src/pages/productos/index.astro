@@ -1,0 +1,106 @@
+---
+import Layout from '../../layouts/Page.astro';
+---
+
+<Layout title="PRODUCTOS">
+  <style>
+    details.product-details {
+      margin-top: 1.5rem;
+      padding: 1rem;
+      border: 1px solid rgba(0,0,0,0.12);
+      border-radius: 0.75rem;
+      background: rgba(255,255,255,0.96);
+    }
+    details.product-details summary {
+      cursor: pointer;
+      font-weight: 700;
+      margin-bottom: 0.75rem;
+      list-style: none;
+    }
+    details.product-details summary::-webkit-details-marker {
+      display: none;
+    }
+    details.product-details summary::before {
+      content: '▸';
+      display: inline-block;
+      margin-right: 0.5rem;
+      transition: transform 0.2s ease;
+    }
+    details.product-details[open] summary::before {
+      transform: rotate(90deg);
+    }
+    details.product-details p,
+    details.product-details h2,
+    details.product-details figure {
+      margin: 0.75rem 0;
+    }
+    .product-extra {
+      font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      font-size: 1rem;
+      line-height: 1.6;
+      color: #ffffff;
+      margin-top: 1rem;
+    }
+    .product-extra p {
+      margin: 0.35rem 0;
+    }
+    details,
+    details p,
+    details summary,
+    details summary strong {
+      font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      font-size: 1rem;
+      line-height: 1.6;
+      color: #ffffff;
+    }
+  </style>
+
+  <section>
+    <h1>AIRPUR PRO</h1>
+    <p>Tratamiento desinfectante eliminador de olores en circuitos de aire. Bactericida / Fungicida / Viricida.</p>
+    <figure>
+      <img src="/image2.jpg" alt="AIRPUR PRO" width="600" height="600" />
+    </figure>
+
+   <details>
+  <summary><strong>Descripción</strong></summary>
+  <p>AIRPUR PRO® es un eficaz tratamiento para eliminar malos olores. Es bactericida, fungicida y viricida. Su alta eficacia lo convierte en un producto esencial para todos los sistemas de conducción de aire, evitando la proliferación de bacterias, hongos, virus y microorganismos, como principales causantes de enfermedades y contagios.</p>
+</details>
+
+<details>
+  <summary><strong>Aplicación</strong></summary>
+  <p>Se emplea como bactericida, fungicida y viricida para sistemas de circuitos de acondicionamiento de aire.</p>
+</details>
+
+<details>
+  <summary><strong>Propiedades físicas</strong></summary>
+  <p>Aspecto – Líquido transparente.</p>
+</details>
+
+<details>
+  <summary><strong>Composición cualitativa</strong></summary>
+  <p>Agua destilada.</p>
+</details>
+
+<details>
+  <summary><strong>CHQUÍMICA</strong></summary>
+  <p>Pol. Ind. Pla de la Bruguera C/ Olot, 18.</p>
+</details>
+
+
+    <hr />
+
+    <h2>Filtro Silver Ion + Cupric Ion + Zinc Ion HTW</h2>
+    <p>Filtro APS-C</p>
+    <figure>
+      <img src="/image1.png" alt="Filtro" width="650" height="650" />
+    </figure>
+
+    <div class="product-extra">
+      <p>Destruyen la estructura del ADN del virus y desnaturalizan la proteína</p>
+      <p>Eficacia del 99,99% frente a bacterias</p>
+      <p>Eficacia del 99,93% frente a virus</p>
+      <p>Triple capa de filtros formada por: Silver Ion, Cupric ion y Zinc Ion.</p>
+    </div>
+  </section>
+</Layout>

@@ -1,15 +1,12 @@
+astro---
+import Layout from '../layouts/Page.astro';
 ---
-import BaseHead from '../components/BaseHead.astro';
----
+<Layout title="AGENDA" description="CLAUDIO MARTINI">
+	<p>
+		<!-- Google Calendar Appointment Scheduling begin -->
+<iframe src="https://calendar.google.com/calendar/appointments/schedules/AcZssZ3cU0HwoZv8wdyZ4TDFnx3wflKjGVucqPsMAeyOmPwICxUt5jVaxI4ZYHrSk_iIAtkmPwNA4Nux?gv=true" style="border: 0; background-color: #ffffff;" width="100%" height="600" frameborder="0"></iframe>
+<!-- end Google Calendar Appointment Scheduling -->
 
-<!doctype html>
-<html lang="en">
-	<body style="margin: 0; min-height: 100vh; background: #ffffff;">
-		<iframe
-			src="https://calendar.google.com/calendar/appointments/schedules/AcZssZ3cU0HwoZv8wdyZ4TDFnx3wflKjGVucqPsMAeyOmPwICxUt5jVaxI4ZYHrSk_iIAtkmPwNA4Nux?gv=true"
-			style="border: 0; display: block; width: 100vw; height: 100vh;"
-			frameborder="0"
-			scrolling="yes"
-		></iframe>
-	</body>
-</html>
+	</p>
+
+</Layout>
